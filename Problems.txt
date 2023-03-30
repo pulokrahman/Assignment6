@@ -1,0 +1,64 @@
+1.. What are the six combinations of access modifier keywords and what do they do? 
+public doesn't restrict access
+protected internal restricts access to every class in the same assembly and for derived classes in non-same assembly 
+protected restricts access to only classes that inherit that class and itself
+private protected resticts access to only classes that inherit that class in the same assembly and itself
+private restricts access to only itself
+
+2.What is the difference between the static, const, and readonly keywords when applied to a type member?
+static member is created at compile type and is a class variable meaning it's shared between all objects of a class. It can also be modified compare to the other two.
+const member must be assigned a value at declaration and cannot be changed at a later time. It's created during compile time.
+readonly member can be assigned during runtime when the object is created and defines its properties. Can't be changed.
+3. What does a constructor do?
+It's invoked when one creates instance of a class. Basically it intializes the objects where one can define its properties.   
+4. Why is the partial keyword useful?
+It's useful for big projects. Programmers can work  on indivduals parts and the partial class would combine them all into without needing to work on one single file.  
+5. What is a tuple?
+A datastructure that allows you to group multiple data types:
+(double, int) t1 = (4.5, 3);
+
+6. What does the C# record keyword do?
+Defines a reference type like classes, but equality is based on properties and having same number of properties and names instead of basing it on memory location.
+7. What does overloading and overriding mean?
+Overloading is defining functions with the same name but at have different parameters, order of parmeters, or type of parameters.  
+8. What is the difference between a field and a property?
+9. How do you make a method parameter optional? 
+By Method overloading where you define the same method but take out that parameter. 
+10. What is an interface and how is it different from abstract class?
+Interface is must have all it's members have no body. One can also implement many interfaces. Abstract classes can have members with bodies. One can only extend one abstract class. 
+11. What accessibility level are members of an interface?
+public
+12. True/False. Polymorphism allows derived classes to provide different implementations
+of the same method. 
+True
+13. True/False. The override keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.
+False, it's only used for the implementation of abstract or virtual methods.
+14. True/False. The new keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.
+False, it's used to create objects.
+15. True/False. Abstract methods can be used in a normal (non-abstract) class.
+False 
+16. True/False. Normal (non-abstract) methods can be used in an abstract class. 
+True
+17. True/False. Derived classes can override methods that were virtual in the base class. 
+True
+18. True/False. Derived classes can override methods that were abstract in the base class. 
+True, but it has too.It's not optionaly like for a virtual method.
+19. True/False. In a derived class, you can override a method that was neither virtual non abstract in the
+base class.
+False
+20. True/False. A class that implements an interface does not have to provide an
+implementation for all of the members of the interface.
+False
+21. True/False. A class that implements an interface is allowed to have other members that
+aren’t defined in the interface.
+True
+22. True/False. A class can have more than one base class.
+False
+23. True/False. A class can implement more than one interface.What is meant by the terms managed resource and unmanaged resource in .NET
+True.
+A managed resource will be maintained by the garbage collector while an unmanaged resource has to be maintained by the programmer. 
+
+24. What's the purpose of Garbage Collector in .NET?
+To automatically maintain data and memory and not have to worry about it.Also manages data in the heap efficently without needing to do it ourselves. Also handles the memory safety so another object can't use the memory of another object. 
