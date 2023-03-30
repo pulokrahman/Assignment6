@@ -22,6 +22,8 @@ Defines a reference type like classes, but equality is based on properties and h
 7. What does overloading and overriding mean?
 Overloading is defining functions with the same name but at have different parameters, order of parmeters, or type of parameters.  
 8. What is the difference between a field and a property?
+A field is an instance variable of that class
+A property is the getter and setters of a field.
 9. How do you make a method parameter optional? 
 By Method overloading where you define the same method but take out that parameter. 
 10. What is an interface and how is it different from abstract class?
