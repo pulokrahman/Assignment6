@@ -1,7 +1,19 @@
 ﻿public class Solution
 {
-    
-
+    public static void Main()
+    {
+        int[] nums = new int[] { -1, -1, 1, 0,0,0, 2 };
+        Solution solution = new Solution();
+        IList<IList<int>> list = solution.ThreeSum(nums);
+        foreach (List<int> l in list)
+        {
+            foreach (int i in l)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
+    }
 
     public IList<IList<int>> ThreeSum(int[] nums)
     {
